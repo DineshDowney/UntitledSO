@@ -1,0 +1,15 @@
+{%extends "base.html"%} {% load static %} 
+{%block content%}
+<link href="https://fonts.googleapis.com/css?family=Oswald:600,700" rel="stylesheet">
+<div class="container"  style="padding-top: 35px;">
+    <div class="row">
+        <body>
+            <div class="card-panel" style= "background-color:rgb(20,124,32)">
+                <p style="padding-bottom: 10px;font-size: 40px;font-family:Oswald;color: black"> You are {% if request.user.is_authenticated %}<a href="../">logged in as {{request.user.username}}<b></b></a>{%else%}<a href="../signup/"><b>not logged in</b></a>{%endif%}</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis tenetur, quam aliquam quae eos nostrum repellendus dolorem rerum quasi possimus asperiores optio inventore. Explicabo omnis neque ut praesentium harum! Quo!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci harum eaque repellat atque voluptatibus dolorum id nostrum corporis quas aut totam, aliquid mollitia nobis impedit, inventore provident qui, a ut.</p>
+            </div>
+        </body>
+    </div>
+</div>
+{%endblock%}

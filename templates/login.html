@@ -1,0 +1,13 @@
+{% extends "base.html" %} {% block content %}
+{%include 'includes/_form.html'%}
+<div class="container row">
+    <div class='form-container'>
+        <div class="form-head"></div>
+        <form method='POST' class="form_class"  style="background-color:rgba(72, 35, 37, 0.611)">
+            {% csrf_token %}
+            {{form_dic.as_p}}
+            <input type="submit" class=' btn btn-primary' value='log in'>
+        </form>
+    </div>
+</div>
+{% endblock%}

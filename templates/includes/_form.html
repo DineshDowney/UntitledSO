@@ -1,0 +1,116 @@
+<style type="text/css">
+    .form_class {
+        max-width: 400px;
+        margin: 50px auto;
+        background: #fff;
+        border-radius: 2px;
+        padding: 20px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+    }
+
+    .form_class h1 {
+        display: block;
+        text-align: center;
+        padding: 0;
+        margin: 0px 0px 20px 0px;
+        color: #5C5C5C;
+        font-size: x-large;
+    }
+
+    .form_class ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .form_class li {
+        display: block;
+        padding: 9px;
+        border: 1px solid #DDDDDD;
+        margin-bottom: 30px;
+        border-radius: 3px;
+    }
+
+    .form_class li:last-child {
+        border: none;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    .form_class li>label {
+        display: block;
+        float: left;
+        margin-top: -19px;
+        background: #FFFFFF;
+        height: 14px;
+        padding: 2px 5px 2px 5px;
+        color: #B9B9B9;
+        font-size: 14px;
+        overflow: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .form_class input[type="text"],
+    .form_class input[type="date"],
+    .form_class input[type="datetime"],
+    .form_class input[type="email"],
+    .form_class input[type="number"],
+    .form_class input[type="search"],
+    .form_class input[type="time"],
+    .form_class input[type="url"],
+    .form_class input[type="password"],
+    .form_class textarea,
+    .form_class select {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        width: 100%;
+        display: block;
+        outline: none;
+        border: none;
+        height: 25px;
+        line-height: 25px;
+        font-size: 16px;
+        padding: 0;
+        font-family: Georgia, "Times New Roman", Times, serif;
+    }
+
+    .form_class li>span {
+        background: #F3F3F3;
+        display: block;
+        padding: 3px;
+        margin: 0 -9px -9px -9px;
+        text-align: center;
+        color: #C0C0C0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+    }
+
+    .form_class textarea {
+        resize: none;
+    }
+
+    .form_class input[type="submit"],
+    .form_class input[type="button"] {
+        background: #2471FF;
+        border: none;
+        padding: 10px 20px 40px 20px;
+        border-bottom: 3px solid #5994FF;
+        border-radius: 3px;
+        color: #D2E2FF;
+    }
+
+    .form_class input[type="submit"]:hover,
+    .form_class input[type="button"]:hover {
+        background: #6B9FFF;
+        color: #fff;
+    }
+</style>
+
+<script type="text/javascript">
+    //auto expand textarea
+    function adjust_textarea(h) {
+        h.style.height = "20px";
+        h.style.height = (h.scrollHeight) + "px";
+    }
+</script>

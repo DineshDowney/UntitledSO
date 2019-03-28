@@ -1,0 +1,19 @@
+<nav>
+    <div class="nav-wrapper" style="font-family: 'Lilita One',cursive;font-size: 35px; background-color:rgb(20,124,32)">
+        <a href="../" class="brand-logo center" style="font-size: 55px;">Title </a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="../about">About</a></li>
+        </ul>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            {% if request.user.is_authenticated %}
+            <li><a href="#">{{request.user.first_name}}</a></li>
+            <li><a href="../logout">Logout</a></li>
+            {% else %}
+            <li><a href="../login">Login</a></li>
+            <li><a href="../signup">Sign-up</a></li>
+            {% endif %}
+        </ul>
+    </div>
+</nav>
