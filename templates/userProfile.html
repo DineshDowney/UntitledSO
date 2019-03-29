@@ -1,0 +1,24 @@
+{%extends "base.html" %} {% load static %}
+{%block content%}
+<link href="https://fonts.googleapis.com/css?family=Oswald:600,700" rel="stylesheet">
+<div class="container" style="padding-top: 35px;">
+    <div class="row">
+        <body>
+            <div class="card-panel" style="background-color:rgba(238, 110, 114, 0.771)">
+                <form action="" method="post" enctype="multipart/form-data">{% csrf_token %}
+                    <p>
+                        <input id="id_image" type="file" class="" name="image">
+                    </p>
+                    <input type="submit" value="Submit" />
+                </form>
+                Pic here
+                <img class="rounded-circle account-img" src="{{ request.user.avatar.url }}">
+                Pic above
+                <p style="padding-bottom: 10px;font-size: 40px;font-family:Oswald;color: black">I am {{request.user.username}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
