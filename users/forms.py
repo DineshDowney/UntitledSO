@@ -7,8 +7,6 @@ class Register(forms.Form):
         attrs={"placeholder":"Your first name"}))
     lname = forms.CharField(label="Last Name",widget=forms.TextInput(
         attrs={"placeholder": "Your last name"}))
-  #  username = forms.CharField(label="UserName", widget=forms.TextInput(
-   #     attrs={"placeholder": "Your desired username"}))
     email = forms.EmailField(widget=forms.EmailInput(
         attrs={"placeholder": "username@xyz.com"}), label="E-Mail Address")
     mob_num = forms.DecimalField(
@@ -30,8 +28,6 @@ class Register(forms.Form):
 class LoginForm(forms.Form):
     uname = forms.CharField(label="Username", widget=forms.TextInput(
                 attrs={"placeholder": "Username"}))
-    #email = forms.EmailField(widget=forms.EmailInput(
-     #   attrs={"placeholder": "username@xyz.com"}), label="E-Mail Address")
     password = forms.CharField(label="Password", widget=forms.PasswordInput(
         attrs={"placeholder": "********"}))
 

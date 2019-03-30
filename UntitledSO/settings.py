@@ -32,8 +32,7 @@ ALLOWED_HOSTS = ["https://untitledso.herokuapp.com/","*", ]
 
 INSTALLED_APPS = [
     'home',
-   # 'users',
-   'crispy_forms',
+    'crispy_forms',
     'users.apps.UsersConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -126,6 +125,3 @@ STATIC_URL = '/static/'
 MEDIA_ROOT= os.path.join(BASE_DIR,'media')
 MEDIA_URL='/media/'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
-
-LOGIN_REDIRECT_URL = 'blog-home'
-LOGIN_URL = 'login'

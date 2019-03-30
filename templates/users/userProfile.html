@@ -7,9 +7,11 @@
         <div class="content-section ">
             <div class="media">
                 <p>
-                    <img class="rounded-circle account-img" src="../{{user.profile.avatar.url}}">
+                    <img class="rounded-circle account-img" src="{{user.profile.avatar.url}}">{{user.profile.avatar.url}}
+                    <img src="default.jpg">
                 </p>
-                Pic at ../{{user.profile.avatar.url}}
+                {{user.profile.avatar}}
+                {{user.profile.bio}}
                 <p style="padding-bottom: 10px;font-size: 40px;font-family:Oswald;color: black">
                     I am {{user.username}}
                 </p>

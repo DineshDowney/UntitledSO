@@ -29,12 +29,12 @@ def register(request):
                 login(request, auth_user)
                 return redirect("../")
     RegForm = forms.Register()
-    return render(request, 'register.html', {'form_dic': RegForm})
+    return render(request, 'users/register.html', {'form_dic': RegForm})
 
 def user_logout(request):
     logout(request)
     messages.info(request, "Logged out successfully")
-    return render(request, "homepage.html")
+    return render(request, "home/homepage.html")
 
 def user_login(request):
     LogForm = forms.LoginForm(request.POST or None)
@@ -47,12 +47,11 @@ def user_login(request):
             login(request, auth_user)
             messages.info(request, f"You are logged in as: {username}")
             return redirect("../")
-    return render(request, 'login.html', {'form_dic': LogForm})
+    return render(request, 'users/login.html', {'form_dic': LogForm})
 
 def profile(request):
     cur_user=models.User
-    return render(request, 'userProfile.html', {'User':cur_user})
-
+    return render(request, 'users/userProfile.html', {'User':cur_user})
 
 def upload_pic(request):
     #cur_user = models.User
